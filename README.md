@@ -14,11 +14,11 @@ workflow "Tests & Formatting" {
     resolves = ["Test", "Check Formatting"]
 }
 
+# Convenience workflow for `mix test`
 action "Test" {
     uses = "jclem/action-mix/test@v1.2.0"
 }
 
-# Convenience workflow for `mix test`
 action "Check Formatting" {
     uses = "jclem/action-mix@v1.2.0"
     args = "format --check-formatted"
