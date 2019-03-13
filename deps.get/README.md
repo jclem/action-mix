@@ -13,7 +13,7 @@ workflow "Run Tests on Push" {
 }
 
 action "Get Deps" {
-    uses = "jclem/action-mix/deps-get@v1.3.0"
+    uses = "jclem/action-mix/deps.get@v1.3.0"
 }
 
 action "Run Tests" {

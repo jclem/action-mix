@@ -13,6 +13,6 @@ workflow "Run Tests on Push" {
 }
 
 action "Run Tests" {
-    uses = "jclem/action-mix/test@v1.2.0"
+    uses = "jclem/action-mix/test@v1.3.0"
 }
 ```
