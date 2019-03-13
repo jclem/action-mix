@@ -6,19 +6,21 @@ The default `MIX_ENV` is `"dev"`, so override it as needed.
 
 ## Usage
 
-An example workflow to run `mix test` is as follows:
+An example workflow to run `mix test` and `mix format --check-formatted` is as follows:
 
 ```hcl
-workflow "Run tests" {
-  on = "push"
-  resolves = "Test"
+workflow "Tests & Formatting" {
+    on = "push"
+    resolves = ["Test", "Check Formatting"]
 }
 
 action "Test" {
-  uses = "jclem/actions/mix@master"
-  args = "test"
-  env = {
-    MIX_ENV = "test"
-  }
+    uses = "jclem/action-mix/test@v1.2.0"
+}
+
+# Convenience workflow for `mix test`
+action "Check Formatting" {
+    uses = "jclem/action-mix@v1.2.0"
+    args = "format --check-formatted"
 }
 ```
