@@ -4,7 +4,7 @@ LABEL "repository"="https://github.com/jclem/actions"
 LABEL "homepage"="https://github.com/jclem/actions/mix"
 LABEL "maintainer"="Jonathan Clem <jonathan@jclem.net>"
 
-LABEL "com.github.actions.name"="GitHub Action for Elixir Mix"
+LABEL "com.github.actions.name"="Run Elixir mix commands"
 LABEL "com.github.actions.description"="An action for running Elixir mix commands"
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="orange"

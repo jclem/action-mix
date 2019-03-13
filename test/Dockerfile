@@ -4,7 +4,7 @@ LABEL "repository"="https://github.com/jclem/actions"
 LABEL "homepage"="https://github.com/jclem/actions/mix"
 LABEL "maintainer"="Jonathan Clem <jonathan@jclem.net>"
 
-LABEL "com.github.actions.name"="GitHub Action for `mix test`"
+LABEL "com.github.actions.name"="Run `mix test`"
 LABEL "com.github.actions.description"="An action for running `mix test`"
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="orange"
