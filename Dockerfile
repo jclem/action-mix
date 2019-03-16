@@ -1,7 +1,7 @@
 FROM elixir
 
-LABEL "repository"="https://github.com/jclem/actions"
-LABEL "homepage"="https://github.com/jclem/actions/mix"
+LABEL "repository"="https://github.com/jclem/action-mix"
+LABEL "homepage"="https://github.com/jclem/action-mix"
 LABEL "maintainer"="Jonathan Clem <jonathan@jclem.net>"
 
 LABEL "com.github.actions.name"="Run Elixir mix commands"
