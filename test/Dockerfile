@@ -11,7 +11,7 @@ LABEL "com.github.actions.color"="orange"
 
 ARG MIX_HOME=/.mix
 ENV MIX_HOME=$MIX_HOME
-ARG MIX_ENV=dev
+ARG MIX_ENV=test
 ENV MIX_ENV=$MIX_ENV
 
 RUN mix local.rebar --force
