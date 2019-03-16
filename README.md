@@ -13,7 +13,7 @@ follows:
 ```hcl
 workflow "Tests & Formatting" {
     on = "push"
-    resolves = ["Test", "Check Formatting"]
+    resolves = ["Run Tests", "Check Formatting"]
 }
 
 # Convenience workflow for `mix deps.get`
@@ -22,7 +22,7 @@ action "Get Deps" {
 }
 
 # Convenience workflow for `mix test`
-action "Test" {
+action "Run Tests" {
     uses = "jclem/action-mix/test@v1.3.2"
     needs = "Get Deps"
 }
