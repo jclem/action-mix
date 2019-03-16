@@ -1,6 +1,7 @@
 # GitHub Action for `mix test`
 
-This Action makes it easy to run `mix test` with no additional args or environment variables necessary.
+This Action makes it easy to run `mix test` with no additional args or
+environment variables necessary.
 
 ## Usage
 
