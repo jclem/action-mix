@@ -1,17 +1,19 @@
 # GitHub Action for Mix
 
-This Action for [Mix](https://hexdocs.pm/mix/Mix.html) enables arbitrary actions with this `mix` command-line client.
+This Action for [Mix](https://hexdocs.pm/mix/Mix.html) enables arbitrary actions
+with this `mix` command-line client.
 
 The default `MIX_ENV` is `"dev"`, so override it as needed.
 
 ## Usage
 
-An example workflow to run `mix test` and `mix format --check-formatted` is as follows:
+An example workflow to run `mix test` and `mix format --check-formatted` is as
+follows:
 
 ```hcl
 workflow "Tests & Formatting" {
     on = "push"
-    resolves = ["Test", "Check Formatting"]
+    resolves = ["Run Tests", "Check Formatting"]
 }
 
 # Convenience workflow for `mix deps.get`
@@ -20,7 +22,7 @@ action "Get Deps" {
 }
 
 # Convenience workflow for `mix test`
-action "Test" {
+action "Run Tests" {
     uses = "jclem/action-mix/test@v1.3.3"
     needs = "Get Deps"
 }

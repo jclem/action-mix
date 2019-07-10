@@ -1,6 +1,7 @@
 # GitHub Action for `mix deps.get`
 
-This Action makes it easy to run `mix deps.get` with no additional args or environment variables necessary.
+This Action makes it easy to run `mix deps.get` with no additional args or
+environment variables necessary.
 
 ## Usage
 
