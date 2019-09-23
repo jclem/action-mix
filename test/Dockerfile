@@ -1,4 +1,4 @@
-FROM elixir
+FROM elixir:1.9.1
 
 LABEL "repository"="https://github.com/jclem/action-mix"
 LABEL "homepage"="https://github.com/jclem/action-mix"
