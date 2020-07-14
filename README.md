@@ -1,3 +1,7 @@
+**🚨 [Archived] This action worked for an early iteration of the GitHub Actions beta. Now, check out [actions/setup-elixir](https://github.com/actions/setup-elixir)! 🚨**
+
+---
+
 # GitHub Action for Mix
 
 This Action for [Mix](https://hexdocs.pm/mix/Mix.html) enables arbitrary actions with this `mix` command-line client.
